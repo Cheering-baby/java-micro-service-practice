@@ -1,4 +1,4 @@
-package com.service.payment.common;
+package com.service.common.common;
 
 /**
  * 通用返回对象
@@ -26,7 +26,6 @@ public class CommonResult<T> {
     /**
      * 成功返回结果
      *
-     * @param data 获取的数据
      */
     public static <T> CommonResult<T> success() {
         return new CommonResult<T>(ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getMessage(), null);
@@ -125,5 +124,14 @@ public class CommonResult<T> {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "CommonResult{" +
+                "code='" + code + '\'' +
+                ", message='" + message + '\'' +
+                ", data=" + data +
+                '}';
     }
 }

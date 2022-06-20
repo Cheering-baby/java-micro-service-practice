@@ -1,6 +1,6 @@
 package com.service.payment.dao;
 
-import com.service.payment.entity.Payment;
+import com.service.common.entity.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

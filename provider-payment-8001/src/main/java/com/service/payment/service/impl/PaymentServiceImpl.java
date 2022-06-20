@@ -1,7 +1,7 @@
 package com.service.payment.service.impl;
 
+import com.service.common.entity.Payment;
 import com.service.payment.dao.PaymentDao;
-import com.service.payment.entity.Payment;
 import com.service.payment.service.PaymentService;
 import org.springframework.stereotype.Service;
 

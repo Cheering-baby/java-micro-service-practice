@@ -1,4 +1,4 @@
-package com.service.payment.common;
+package com.service.common.common;
 
 /**
  * @author daizhihong

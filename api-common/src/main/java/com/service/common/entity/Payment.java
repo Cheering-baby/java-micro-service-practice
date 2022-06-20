@@ -1,4 +1,4 @@
-package com.service.payment.entity;
+package com.service.common.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,8 +1,7 @@
 package com.service.payment.controller;
 
-import brave.http.HttpServerResponse;
-import com.service.payment.common.CommonResult;
-import com.service.payment.entity.Payment;
+import com.service.common.common.CommonResult;
+import com.service.common.entity.Payment;
 import com.service.payment.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -26,13 +25,14 @@ public class PaymentController {
         int result = paymentService.create(payment);
         log.info("result" + result);
         if(result > 0) {
-            return CommonResult.success();
+            return CommonResult.success(result);
         }
         return CommonResult.failed();
     }
 
-    @RequestMapping(value = "/getPaymentById", method = RequestMethod.GET)
+    @RequestMapping(value = "/get", method = RequestMethod.GET)
     public CommonResult getPaymentById(@RequestParam Long id) {
+        log.info("id: {}", id);
         Payment payment = paymentService.getPaymentById(id);
         return CommonResult.success(payment);
     }
