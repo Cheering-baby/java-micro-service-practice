@@ -20,7 +20,7 @@ import java.util.Map;
 @Slf4j
 public class OrderController {
 
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://PAYMENT-SERIVCE";
 
     @Resource
     private RestTemplate restTemplate;
