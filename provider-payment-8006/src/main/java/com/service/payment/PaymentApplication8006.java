@@ -3,13 +3,16 @@ package com.service.payment;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+/**
+ * @author daizhihong
+ * @create 2022/6/26 19:53
+ **/
 
 @SpringBootApplication
-@EnableEurekaClient
 @EnableDiscoveryClient
-public class PaymentApplication8001 {
+public class PaymentApplication8006 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentApplication8001.class, args);
+        SpringApplication.run(PaymentApplication8006.class, args);
     }
 }
